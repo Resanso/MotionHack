@@ -1,0 +1,21 @@
+1. Pengenalan fluter
+- cara kerja flutter : sebagai translator bahasa dart ke sistem operasi ios(swift) dan android (kotlin/java) 
+- kenapa flutter ? : cross platform, lebih cepat, performa hampir sama dengan native, dikembangkan google
+- sebelum belajar harus siap : familiar dengan aplikasi mobile, memahami alpro, bisa dart
+
+2. intro dart
+- dibuat oleh google, fokus ke FE, mendukung OOP, Type data kuat (tidak bisa mengubah type data di algoritma seperti golang)
+3. Basic Dart
+- tipe data dan variabel : seperti biasanya ada integer, string, desimal (double), boolean, dll.
+- tipe data null : boleh tidak memiliki nilai dan bisa di print walaupun tidak memiliki nilai
+- operasi aritmatika : seperti biasanya ada tambah, kurang, kali, bagi
+- percabangan : if else, else if
+- operator perbandingan : =, !=, >=, <=
+- perulangan : for loop
+4. function
+  umumnya dipakai untuk membuat fungsi lain diluar void main, dan bisa di panggil kapan saja.
+- fungsi alternatif : arrow function, anonymous function
+5. struktur data 
+- list : menyimpan lebih dari 1 nilai dalam Variabel 
+- map : tipe data yang berisi pasangan kata kunci dan nilai variabel tersebut
+- class : blueprint untuk membuat objek
