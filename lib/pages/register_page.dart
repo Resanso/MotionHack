@@ -1,6 +1,6 @@
-import 'package:flutter/cupertino.dart';
+// ignore_for_file: unused_import
+
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 import 'package:slicing_ui/pages/button_login.dart';
@@ -18,38 +18,47 @@ class RegisterPage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Lottie.asset('assets/lottie/login.json', width: 200),
               Text(
                 'Register !',
                 style: TextStyle(
-                    fontSize: 20,
+                    fontSize: 16,
                     fontWeight: FontWeight.bold,
-                    color: Colors.blue,
+                    color: Colors.black,
                     fontFamily: GoogleFonts.plusJakartaSans().fontFamily),
               ),
-              Text(
-                'Happy Shopping All',
-                style: TextStyle(
-                    fontSize: 15,
-                    fontWeight: FontWeight.bold,
-                    fontFamily: GoogleFonts.plusJakartaSans().fontFamily),
-              ),
-              const Padding(
-                padding: EdgeInsets.all(8.0),
-                child: SizedBox(
-                  width: 300,
-                  child: TextField(
-                    decoration: InputDecoration(
-                      prefixIcon: Icon(Icons.email),
-                      labelText: 'Email',
-                      border: OutlineInputBorder(),
-                    ),
-                  ),
+              Padding(
+                padding: const EdgeInsets.only(bottom: 20),
+                child: Text(
+                  'Create your account for Happy Shopping',
+                  style: TextStyle(
+                      color: const Color(0x70707070),
+                      fontSize: 12,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: GoogleFonts.plusJakartaSans().fontFamily),
                 ),
               ),
-              const CustomTextFieldWidget(),
-              const CustomTextFieldWidget(),
-              const ButtonLogin(),
+              const CustomTextFieldWidget(
+                hintText: 'Full Name',
+                prefixIcon: Icon(Icons.people_outline_rounded),
+              ),
+              const CustomTextFieldWidget(
+                hintText: 'Email',
+                prefixIcon: Icon(Icons.email_outlined),
+              ),
+              const CustomTextFieldWidget(
+                hintText: 'Password',
+                prefixIcon: Icon(Icons.lock_outlined),
+              ),
+              const Padding(
+                padding: EdgeInsets.only(bottom: 16),
+                child: CustomTextFieldWidget(
+                  hintText: 'Confirm Pasword',
+                  prefixIcon: Icon(Icons.lock_outline),
+                ),
+              ),
+              const ButtonLogin(
+                buttonText: 'Register',
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
@@ -57,13 +66,33 @@ class RegisterPage extends StatelessWidget {
                     onTap: () {
                       Navigator.pop(context);
                     },
-                    child: Text(
-                      'Don`t have an account?',
-                      style: TextStyle(
-                          fontSize: 15,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.blue,
-                          fontFamily: GoogleFonts.plusJakartaSans().fontFamily),
+                    child: Container(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          RichText(
+                            text: TextSpan(
+                              text: 'Already have an account? ',
+                              style: TextStyle(
+                                fontSize: 12,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.black,
+                                fontFamily:
+                                    GoogleFonts.plusJakartaSans().fontFamily,
+                              ),
+                              children: const <TextSpan>[
+                                TextSpan(
+                                  text: 'Login',
+                                  style: TextStyle(
+                                    color: Colors.green,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ],

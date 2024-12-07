@@ -1,16 +1,16 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:slicing_ui/pages/register_page.dart';
+import 'package:slicing_ui/pages/home_page.dart';
 
 class ButtonLogin extends StatelessWidget {
-  const ButtonLogin({super.key});
+  final String buttonText;
+
+  const ButtonLogin({super.key, required this.buttonText});
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
-      child: Container(
+      child: SizedBox(
         width: 300,
         height: 50,
         child: ElevatedButton(
@@ -18,20 +18,20 @@ class ButtonLogin extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => const RegisterPage(),
+                builder: (context) => const HomePage(),
               ),
             );
           },
           style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.blue, // background color
+            backgroundColor: const Color(0xFF00623B), // background color
             foregroundColor: Colors.white, // text color
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12), // rounded corners
             ),
-            padding:
-                EdgeInsets.symmetric(horizontal: 20, vertical: 10), // padding
+            padding: const EdgeInsets.symmetric(
+                horizontal: 20, vertical: 10), // padding
           ),
-          child: const Text('Login'),
+          child: Text(buttonText),
         ),
       ),
     );

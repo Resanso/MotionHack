@@ -1,9 +1,11 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class CustomTextFieldWidget extends StatelessWidget {
-  const CustomTextFieldWidget({super.key});
+  final String hintText;
+  final Icon prefixIcon;
+
+  const CustomTextFieldWidget(
+      {super.key, required this.hintText, required this.prefixIcon});
 
   @override
   Widget build(BuildContext context) {
@@ -12,10 +14,10 @@ class CustomTextFieldWidget extends StatelessWidget {
       child: SizedBox(
         width: 300,
         child: TextFormField(
-          decoration: const InputDecoration(
-            prefixIcon: Icon(Icons.lock),
-            labelText: 'Password',
-            border: OutlineInputBorder(),
+          decoration: InputDecoration(
+            prefixIcon: prefixIcon,
+            labelText: hintText,
+            border: const OutlineInputBorder(),
           ),
         ),
       ),
