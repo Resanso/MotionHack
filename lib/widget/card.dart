@@ -19,7 +19,7 @@ class ProductCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Flexible(
+    return SingleChildScrollView(
       child: Container(
         margin: EdgeInsets.only(top: 10, bottom: 5, left: 10, right: 10),
         padding: const EdgeInsets.all(10),
