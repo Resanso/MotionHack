@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:slicing_ui/pages/cart.dart';
 import 'package:slicing_ui/pages/side_bar.dart';
+import 'package:get/get.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.green,
@@ -41,7 +43,9 @@ class HomeScreen extends StatelessWidget {
         actions: [
           IconButton(
             icon: const Icon(Icons.shopping_bag_outlined, color: Colors.black),
-            onPressed: () {},
+            onPressed: () {
+              Get.to(const myCart());
+            },
           ),
         ],
       ),
@@ -192,11 +196,8 @@ class HomeScreen extends StatelessWidget {
         unselectedItemColor: Colors.white70,
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: ''),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.account_balance_wallet_rounded), label: ''),
           BottomNavigationBarItem(icon: Icon(Icons.favorite_border), label: ''),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.notifications_none), label: ''),
+          BottomNavigationBarItem(icon: Icon(Icons.account_circle), label: ''),
         ],
       ),
     );
@@ -367,7 +368,10 @@ class ProductDetailScreen extends StatelessWidget {
                 SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      // navigate to cart page using getx
+                      Get.to(const myCart());
+                    },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.green[700],
                       padding: const EdgeInsets.symmetric(vertical: 16),
