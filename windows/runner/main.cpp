@@ -27,7 +27,11 @@ int APIENTRY wWinMain(_In_ HINSTANCE instance, _In_opt_ HINSTANCE prev,
   FlutterWindow window(project);
   Win32Window::Point origin(10, 10);
   Win32Window::Size size(1280, 720);
+<<<<<<< HEAD
   if (!window.Create(L"testgetcli", origin, size)) {
+=======
+  if (!window.Create(L"slicing_ui", origin, size)) {
+>>>>>>> 134859853d28b24a9a012748434842bf065df9a5
     return EXIT_FAILURE;
   }
   window.SetQuitOnClose(true);

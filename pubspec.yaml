@@ -1,9 +1,16 @@
+<<<<<<< HEAD
 name: testgetcli
 description: "A new Flutter project."
+=======
+name: slicing_ui
+description: A new Flutter project.
+
+>>>>>>> 134859853d28b24a9a012748434842bf065df9a5
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
+<<<<<<< HEAD
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
 # followed by an optional build number separated by a +.
@@ -36,11 +43,29 @@ dependencies:
   cupertino_icons: ^1.0.6
   google_fonts: ^6.2.1
   lottie: ^3.1.3
+=======
+# Version and build number for the application
+version: 1.0.0+1
+
+# Flutter SDK environment version constraints
+environment:
+  sdk: ">=3.3.4 <4.0.0"
+
+# Dependencies for the project
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  lottie: ^3.1.3
+  google_fonts: ^6.2.1
+  get_cli: ^1.8.1
+>>>>>>> 134859853d28b24a9a012748434842bf065df9a5
   get: ^4.6.6
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+<<<<<<< HEAD
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -60,10 +85,20 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
+=======
+  flutter_lints: ^3.0.0
+
+# Flutter-specific configurations
+flutter:
+  uses-material-design: true
+
+  # Add assets folder for application resources
+>>>>>>> 134859853d28b24a9a012748434842bf065df9a5
   assets:
     - assets/
     - assets/lottie/
 
+<<<<<<< HEAD
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
@@ -75,6 +110,9 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
+=======
+  # Uncomment and configure the following for custom fonts
+>>>>>>> 134859853d28b24a9a012748434842bf065df9a5
   # fonts:
   #   - family: Schyler
   #     fonts:
@@ -86,6 +124,9 @@ flutter:
   #       - asset: fonts/TrajanPro.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
+<<<<<<< HEAD
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+=======
+>>>>>>> 134859853d28b24a9a012748434842bf065df9a5
