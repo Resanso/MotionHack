@@ -89,6 +89,15 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
+<<<<<<< HEAD
+            VALUE "CompanyName", "com.getcli" "\0"
+            VALUE "FileDescription", "testgetcli" "\0"
+            VALUE "FileVersion", VERSION_AS_STRING "\0"
+            VALUE "InternalName", "testgetcli" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2025 com.getcli. All rights reserved." "\0"
+            VALUE "OriginalFilename", "testgetcli.exe" "\0"
+            VALUE "ProductName", "testgetcli" "\0"
+=======
             VALUE "CompanyName", "com.example" "\0"
             VALUE "FileDescription", "slicing_ui" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
@@ -96,6 +105,7 @@ BEGIN
             VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
             VALUE "OriginalFilename", "slicing_ui.exe" "\0"
             VALUE "ProductName", "slicing_ui" "\0"
+>>>>>>> 134859853d28b24a9a012748434842bf065df9a5
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

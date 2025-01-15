@@ -1,6 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
+<<<<<<< HEAD
+        android:label="testgetcli"
+=======
         android:label="slicing_ui"
+>>>>>>> 134859853d28b24a9a012748434842bf065df9a5
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

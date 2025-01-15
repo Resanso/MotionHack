@@ -1,3 +1,21 @@
+<<<<<<< HEAD
+# testgetcli
+
+A new Flutter project.
+
+## Getting Started
+
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
+=======
 # Flutter State Management dengan GetX
 
 *State Management*  
@@ -129,3 +147,4 @@ dependencies:
    - https://github.com/jonataslaw/getx  
 
 Dengan GetX, pengelolaan state, routing, dan dependency injection menjadi jauh lebih sederhana. Selamat mencoba!
+>>>>>>> 134859853d28b24a9a012748434842bf065df9a5

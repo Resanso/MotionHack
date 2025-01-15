@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
+    "name": "testgetcli",
+    "short_name": "testgetcli",
+=======
     "name": "slicing_ui",
     "short_name": "slicing_ui",
+>>>>>>> 134859853d28b24a9a012748434842bf065df9a5
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

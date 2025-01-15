@@ -1,0 +1,1 @@
+export 'package:testgetcli/infrastructure/navigation/bindings/controllers/side_bar.controller.binding.dart'; 

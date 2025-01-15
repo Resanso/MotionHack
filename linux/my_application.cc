@@ -40,11 +40,19 @@ static void my_application_activate(GApplication* application) {
   if (use_header_bar) {
     GtkHeaderBar* header_bar = GTK_HEADER_BAR(gtk_header_bar_new());
     gtk_widget_show(GTK_WIDGET(header_bar));
+<<<<<<< HEAD
+    gtk_header_bar_set_title(header_bar, "testgetcli");
+    gtk_header_bar_set_show_close_button(header_bar, TRUE);
+    gtk_window_set_titlebar(window, GTK_WIDGET(header_bar));
+  } else {
+    gtk_window_set_title(window, "testgetcli");
+=======
     gtk_header_bar_set_title(header_bar, "slicing_ui");
     gtk_header_bar_set_show_close_button(header_bar, TRUE);
     gtk_window_set_titlebar(window, GTK_WIDGET(header_bar));
   } else {
     gtk_window_set_title(window, "slicing_ui");
+>>>>>>> 134859853d28b24a9a012748434842bf065df9a5
   }
 
   gtk_window_set_default_size(window, 1280, 720);
