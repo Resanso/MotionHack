@@ -30,6 +30,8 @@ migrate_working_dir/
 .pub-cache/
 .pub/
 /build/
+build/
+windows/flutter/ephemeral/
 
 # Symbolication related
 app.*.symbols
