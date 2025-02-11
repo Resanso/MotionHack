@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "909434803178",
+    "project_id": "todomotion-de5b5",
+    "storage_bucket": "todomotion-de5b5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:909434803178:android:46a2eeaf5ffb62c8025893",
+        "android_client_info": {
+          "package_name": "com.motion.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNePNV3-Jl8SsN7QeJS9GgFD2Gagk4_Ow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:909434803178:android:d2f20cf148d7bd1d025893",
+        "android_client_info": {
+          "package_name": "com.san.todo2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNePNV3-Jl8SsN7QeJS9GgFD2Gagk4_Ow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:909434803178:android:036f123503362794025893",
+        "android_client_info": {
+          "package_name": "com.sanzo.todo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNePNV3-Jl8SsN7QeJS9GgFD2Gagk4_Ow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
